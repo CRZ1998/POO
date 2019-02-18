@@ -1,0 +1,105 @@
+import javax.swing.*;
+
+public class Prac13 {
+    
+ public static void main(String[] args) {
+{
+        int opcion=0;
+        double numero1, numero2, s,C,c,T ,r, m, d, p,P, raiz;
+        do
+        {
+            opcion= Integer.parseInt(JOptionPane.showInputDialog
+                    ("Elige una opcion \n" +
+                    "1) Area  \n" +
+                    "2) Volumen \n" +
+                    "3)Salir\n"+
+                    "\n Ingresa una opcion³n: "));
+            switch(opcion)
+            {
+                case 1:
+                    opcion=Integer.parseInt(JOptionPane.showInputDialog
+                            ("Que figura vas a calcular \n" +
+                               "1)Circulo  \n"+
+                                "2)Triangulo\n"+
+                                "3)Rectangulo\n"+     
+                                "4)Pentagono\n"+
+                                  "5)Salir\n"));  
+                    
+                    switch (opcion)
+                    {
+                        case 1:
+                    numero1=Double.parseDouble(JOptionPane.showInputDialog
+                            ("Ingresa el radio del circulo: "));   
+                    C=(numero1*numero1)*3.1416;
+                    JOptionPane.showMessageDialog(null, "El radio del circulo es de: " +C);
+                    break;
+                    case 2:
+                    numero1=Double.parseDouble(JOptionPane.showInputDialog
+                            ("Ingresa La base del Triangulo"));
+                  numero2=Double.parseDouble(JOptionPane.showInputDialog
+                            ("Ingresa La Altura del triangulo "));
+                  T=numero1*numero2/2;
+                   
+                    JOptionPane.showMessageDialog(null, "El area del Triangulo es de"+T);
+                    break;
+                    case 3:
+                    numero1=Double.parseDouble(JOptionPane.showInputDialog
+                            ("Ingresa la base del rectangulo "));
+                    numero2=Double.parseDouble(JOptionPane.showInputDialog
+                            ("Ingresa la altura del rectangulo "));
+                    m= numero1*numero2;
+                    JOptionPane.showMessageDialog(null, "El area del rectangulo es de : " +m);
+                    break;
+                    case 4:
+                    numero1=Double.parseDouble(JOptionPane.showInputDialog
+                            ("Ingresa el perimetro del pentagono: "));
+                    numero2=Double.parseDouble(JOptionPane.showInputDialog
+                            ("Ingresa el apotema : "));
+                    d= numero1*numero2/2;
+                    JOptionPane.showMessageDialog(null, "El area del apotema es de  " +d);
+                    break;
+                    }
+                    System.exit(0);
+                    
+                      case 2 : opcion=Integer.parseInt(JOptionPane.showInputDialog
+                            ("Que figura vas a calcular \n" +
+                               "1)cilinro  \n"+
+                                "2)piramide\n"));
+                        
+                     switch (opcion)
+                     {
+                    case 1:
+                    numero1=Double.parseDouble(JOptionPane.showInputDialog
+                            ("Ingresa el radio del cilindro"));
+                    numero2=Double.parseDouble(JOptionPane.showInputDialog
+                            ("Ingresa la altura  del cilindro"));
+                     c=(3.1416*(numero1*numero1))*numero2;
+                   
+                    JOptionPane.showMessageDialog(null, "El area del cilindro es de"+c);
+                    break;
+                    case 2:
+                        numero1=Double.parseDouble(JOptionPane.showInputDialog
+                            ("Ingresa el area  de la base de la piramide "));
+                           numero2=Double.parseDouble(JOptionPane.showInputDialog
+                            ("Ingresa la altura  de la  de la piramide "));
+                           P=numero1*numero2/3;
+                            JOptionPane.showMessageDialog(null, "El area de LA PIRAMIDE es de"+P);
+                            break;
+                     
+                    
+                                   
+                        
+                        
+                    
+                    
+            }
+        }
+        }
+        
+    
+        while(opcion!=3);
+    }
+        
+}
+        
+    }
